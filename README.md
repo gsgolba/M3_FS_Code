@@ -1,1 +1,1 @@
-## Storage of all projects done for PHYS 498 at UIUC SPring 2022
+## Storage of all projects done for PHYS 498 at UIUC Spring 2022
