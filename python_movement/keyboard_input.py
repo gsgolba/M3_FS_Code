@@ -11,15 +11,13 @@ def main(serCom):
             print("      Successfully connected!")
         else:
             print("    no reply from controller")
-        print( 'Enter your commands below at the >> prompt.\r\n Commands: \r\n      exit: stops the program \r\n      status: tells you the current position of the lens \r\n      d: move lens forward (about 85 micrometers) \r\n      dd: move lens slighty forward (about 4 micrometers) \r\n      a: move lens backward (about 85 micrometers) \r\n      aa: move lens slightly backward (about 4 micrometers) \r\n      spot: [integer between 0 and 3000]: move lens to a desired position (goes in half micrometer steps) \r\n . help: prints these instructions again')
+        print( 'Enter your commands below at the >> prompt.\r\n Commands: \r\n      exit: stops the program \r\n      status: tells you the current position of the lens \r\n      d: move lens forward (about 85 micrometers) \r\n      dd: move lens slighty forward (about 4 micrometers) \r\n      a: move lens backward (about 85 micrometers) \r\n      aa: move lens slightly backward (about 4 micrometers) \r\n      spot: [integer between 0 and 3000]: move lens to a desired position (goes in half micrometer steps) \r\n  help: Prints these instructions again')
         while(True):
             UserCmd = raw_input('enter command: ')
             UserCmd = unicode(UserCmd,"utf-8")
             words = UserCmd.split(" ")
             for word in words:
                 #print(word)
-                if word == 'help':
-                    print( 'Enter your commands below at the >> prompt.\r\n Commands: \r\n      exit: stops the program \r\n      status: tells you the current position of the lens \r\n      d: move lens forward (about 85 micrometers) \r\n      dd: move lens slighty forward (about 4 micrometers) \r\n      a: move lens backward (about 85 micrometers) \r\n      aa: move lens slightly backward (about 4 micrometers) \r\n      spot: [integer between 0 and 3000]: move lens to a desired position (goes in half micrometer steps)')
                 if word == 'd':
                     #move forward
                     print("forward movement")
@@ -31,6 +29,8 @@ def main(serCom):
                     else:
                         print('     No reply from controller')
                     time.sleep(0.25)
+                elif word == 'help':
+                    print( 'Enter your commands below at the >> prompt.\r\n Commands: \r\n      exit: stops the program \r\n      status: tells you the current position of the lens \r\n      d: move lens forward (about 85 micrometers) \r\n      dd: move lens slighty forward (about 4 micrometers) \r\n      a: move lens backward (about 85 micrometers) \r\n      aa: move lens slightly backward (about 4 micrometers) \r\n      spot: [integer between 0 and 3000]: move lens to a desired position (goes in half micrometer steps) \r\n help: Prints these instructions again')
                 elif word == 'dd':
                     #move slightly forward
                     print("slight forward movement")
