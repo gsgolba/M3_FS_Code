@@ -1,0 +1,6 @@
+[submodule "c_uart_interface_example"]
+	path = c_uart_interface_example
+	url = https://github.com/mavlink/c_uart_interface_example.git
+[submodule "my_serial/serial"]
+	path = my_serial/serial
+	url = https://github.com/wjwwood/serial.git
