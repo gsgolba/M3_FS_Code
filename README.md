@@ -9,7 +9,7 @@
    - So we will mess with the RPi interface to communicate with the M3-FS via a serial port.
 
 ## Instructions
-### This should already be done for both the raspberry pis that we are using. However, if nothing is being recognized in the ttyUSB0 port, then these are the instructions to get there
+## This should already be done for both the raspberry pis that we are using. However, if nothing is being recognized in the ttyUSB0 port, then these are the instructions to get there
 1. Associate M3-USB interface to a virtual COM port
    __To change the USB to UART’s vendor/product id to that of a VCP you must do the following…__
    ## How to create virtual COM port
