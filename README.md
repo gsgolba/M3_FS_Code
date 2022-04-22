@@ -6,7 +6,7 @@
  - First we must be able to move the M3_FS while is it connected to the drone.
    - To do so, we fill have a raspberry pi on the drone that will be able to communicate with the M3-FS. We in turn will be able to connect to the RPi over a shared network and move the M3-FS
    - From what I saw, the given software (from the company) to use the M3-FS isn't compatible with its OS. In addition, we need to be able to move the piezo based on an external variable (Drone distance) which the given software also cannot take in and use.
-   - So we will mess with the RPi interface to communicate with the M3-FS via a serial port.
+   - So we will mess with the RPi interface to communicate with the M3-FS via a serial port and make our own code.
 
 ## Instructions
 ## All of this should already be done for both the raspberry pis that we are using. However, if nothing is being recognized in the ttyUSB0 port, then these are the instructions to get there
