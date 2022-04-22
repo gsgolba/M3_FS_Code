@@ -1,8 +1,8 @@
 # How to use
 ## Manual Control
 - The M3_FS_serial directory should have folders for the source code and header code.
-- The source folder should have a makefile where 'make' should make your executable named manual_control
-- 'make clean' will also get rid of the .o files
+- The source folder should have a makefile where `make` should make your executable named manual_control
+- `make clean` will also get rid of the .o files
 - cd 
 ## AutoPilot/Drone GPS
 - I tried some attempts to talk with the gps of the drone to the raspberry pi
