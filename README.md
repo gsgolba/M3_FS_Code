@@ -1,9 +1,12 @@
 # M3-FS_movement
 
 ## The Plan
-- submodules will remain intact, I'll just copy the necessary files I need from them.
-- Double check if any copyright licenses need to be added
-
+ - We want to use the M3-FS, a piezo-electric that can finely move a lens back and forth while on the drone.
+ - We want the movement of this piezo to be based on the distance between our two drones
+ - First we must be able to move the M3_FS while is it connected to the drone.
+ -- To do so, we fill have a raspberry pi on the drone that will be able to communicate with the M3-FS. We in turn will be able to connect to the RPi over a shared network and move the M3-FS
+  -- From what I saw, the given software (from the company) to use the M3-FS isn't compatible with its OS. In addition, we need to be able to move the piezo based on an external variable (Drone distance) which the given software also cannot take in and use.
+  --So we will mess with the RPi interface to communicate with the M3-FS via a serial port.
 
 ## Instructions
 1. Associate M3-USB interface to a virtual COM port
