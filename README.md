@@ -15,8 +15,8 @@
    ## How to create virtual COM port
     1. Install the NST Pathway software onto a Windows PC as well as the SiLabs VCP driver for Windows.
 
-    2. Run the NST USB Bridge Setup program to change it to appear as a Virtual COM Port (this utility is available from the Start menu once the Pathway s/w has been installed).
-    3.  Connect to the M3-FS, through the M3 USB Interface, using the Pathway s/w.
+    2. Run the NST USB Bridge Setup program to change it to appear as a Virtual COM Port (this utility is available from the Start menu once the Pathway software has been installed).
+    3.  Connect to the M3-FS, through the M3 USB Interface, using the Pathway software.
 
         * From the Pathway Setup Connection dialog, you must manually change the baud rate selection from 115200 (the default for a COM port) to 250000 (the preset baud rate in the M3 USB Interface).
 
